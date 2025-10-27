@@ -17,17 +17,19 @@
         .markdown-output-area { -ms-overflow-style: none; scrollbar-width: none; }
         .markdown-output-area::-webkit-scrollbar { display: none; }
         
-        /* NEW: 題目卷輸出樣式，模擬「標楷體, 14pt」 */
+        /* NEW: 題目卷輸出樣式，模擬「Times New Roman, 14pt」 */
         .question-sheet-output {
-            /* 優先使用標楷體或類似字體 */
-            font-family: 'KaiTi', '標楷體', 'Noto Serif TC', serif; 
+            /* 優先使用Times New Roman或類似字體 */
+            font-family: 'KaiTi', 'Times New Roman', 'Noto Serif TC', serif; 
             font-size: 14pt; /* 設定字號 */
-            line-height: 1.8; /* 增加行距以提高可讀性 */
+            line-height: 2; /* 增加行距以提高可讀性 */
         }
         /* 答案卷輸出樣式 (維持簡潔) */
         .answer-sheet-output {
-             font-family: 'Inter', 'Noto Sans TC', sans-serif;
-             font-size: 12pt;
+             /* 優先使用Times New Roman或類似字體 */
+            font-family: 'KaiTi', 'Times New Roman', 'Noto Serif TC', serif; 
+            font-size: 14pt; /* 設定字號 */
+            line-height: 2; /* 增加行距以提高可讀性 */
         }
     </style>
 </head>
@@ -852,7 +854,7 @@
                 // *** 題目卷格式提醒 (應使用者要求) ***
                 content += `--- 
 【匯出格式提醒】
-請將下方內容貼至 Word 文件後，務必將 **所有文字設定為「標楷體, 14pt」**。
+請將下方內容貼至 Word 文件後，務必將 **所有文字設定為「Times New Roman, 14pt」**。
 ---
 \n\n`;
             }
